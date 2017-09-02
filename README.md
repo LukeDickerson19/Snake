@@ -6,6 +6,6 @@
 
 ## Installation
 
-Install Processing:
+Install Processing: https://processing.org/download/ <br />
 copy/paste snake.pds file into new script<br />
 save and run program!
