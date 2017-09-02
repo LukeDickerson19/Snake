@@ -7,5 +7,5 @@
 ## Installation
 
 Install Processing:
-copy/paste snake.pds file into new script
+copy/paste snake.pds file into new script<br />
 save and run program!
