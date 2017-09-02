@@ -9,7 +9,6 @@
 PlayerSegment head, tail;
 ArrayList<PlayerSegment> player;
 String playerDirection = "UP";
-int playerSpeed = 6;
 boolean dead = true;
 
 // Food Variables
@@ -183,7 +182,7 @@ class Food {
   void newPosition() {
     int oldX = x, oldY = y;
     int newX, newY, rx, ry;
-    boolean squareOccupied = false;
+    boolean squareOccupied;
     
     // change position
     while (x == oldX && y == oldY) {
@@ -191,6 +190,7 @@ class Food {
        rx = (int)random(width);      ry = (int)random(height);
        newX = rx - rx % squareWidth; newY = ry - ry % squareHeight;
        
+       squareOccupied = false;
        for (PlayerSegment ps : player) {
          if (newX == ps.getX() && newY == ps.getY()) {
            squareOccupied = true;
@@ -202,9 +202,10 @@ class Food {
          y = newY;
        }
        
-       // change color
-       c = rainbowColor();
     }
+
+    // change color
+    c = rainbowColor();
   }
   
   void drawFood() {
