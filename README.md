@@ -2,4 +2,4 @@
 Classic Arcade Game
 
 
-![snake game](/github.com/snake/images/snake_game.jpg?raw=true "Snake Game")
+![snake game](/github.com/PopeyedLocket/Snake/blob/master/images/snake_game.png?raw=true "Snake Game")
